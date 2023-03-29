@@ -70,5 +70,6 @@ const randomNumber = Math.floor(Math.random()*maximum)+1;
             guess = prompt("Too low! Enter a new guess: ");
         }
     }
+    alert(`\n CONGRATS!! YOU GOT IT in ${attempt} attempts!`);
 console.log(`YOU GOT IT in ${attempt} attempts!`)
 }
