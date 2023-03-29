@@ -1,9 +1,10 @@
 
 function play() {
+    alert("Rules:\n\t1) Player can enter any random number between 1 and 5\n\t2) To continue playing, enter 1 and to quit playing enter any other number");
     let choice = 1;
     while (choice == 1){
         let num1 = Math.floor((Math.random() * 5)+1);
-        let inp = prompt("Guess a number: ");
+        let inp = prompt("Guess a number(between 1-5) : ");
         if (num1 == inp) {
             choice = prompt("Congrats! You Guessed the Correct Number :)\n Enter 1 to continue playing or any other number to Exit game!");
         }
@@ -33,7 +34,7 @@ function play() {
 // }
 
 function play3(){
-    alert("Remember to enter \"quit\" to exit the game!")
+    alert("\n Echo game to see who gets bored first, computer or player lol!\nRemember to enter \"quit\" to exit the game!")
     let input = prompt("Hey, say something");
     while(true){
         input = prompt(input);
